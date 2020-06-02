@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/background.webp');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0px;
+    content: "";
+}
+
+.row {
+    max-width: 1130px;
+    margin: 0px auto;
+}
+
+.logo {
+    float: left;
+    height: 100px;
+    width: auto;
+    margin-top: 15px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    list-style: none;
+    float: right;
+}
+
+.main-nav li a {
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    font-weight: 100px;
+}
+
+.main-nav li a:hover {
+    border-bottom: 2px solid purple;
+}
+
+.main-content {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px;
+    font-weight: lighter;
+}
+
+h1 {
+    color: white;
+    font-size: 200%;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 30px;
+    transition: 1s;
+    border: 1px solid sandybrown;
+    padding: 10px;
+    /* color: purple; */
+    /
+}
+
+.btn-full {
+    background-color: transparent;
+    color: purple;
+}
+
+.btn-full:hover {
+    background: white;
+}
+
+.btn-more:hover {
+    background-color: purple;
+}
+
+.colorchange {
+    animation: 1s colorchange infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: red;
+    }
+    25% {
+        color: white;
+    }
+    75% {
+        color: purple
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@media only screen and(max-width:1248px) {
+    .main-content {
+        padding: 5px 5px;
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:400px) {
+    h1 {
+        font-size: 50%;
+    }
+}
+
+@media only screen and(max-width:550px) {
+    .btn {
+        margin-bottom: 5px;
+    }
+}
